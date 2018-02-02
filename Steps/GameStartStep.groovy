@@ -10,7 +10,7 @@ gameStartStep.run = {
   g.addTimer(gameLength, "gameEndTimer", "Your bonus is currently ", "down",  "currency", "300", {}, null, "success")
   
   g.V.filter{it.ready != null && it.ready}.each { player ->
-    a.ai.remove(player)
+    // a.ai.remove(player)
     player.text = c.get("GameOn", Math.round(gameLength / 60))
       
     // Random starting color
