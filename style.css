@@ -1,7 +1,7 @@
 circle.client {
   stroke: #333;
   stroke-width: 3px;
-  fill-opacity: 1;
+  fill-opacity: 1;   
 }
 
 line.client {
@@ -14,7 +14,7 @@ line.client[conflict="1"] {
   stroke-width: 12px;
 }
 
-text.client {
+.main text.client {
   fill: #000;
   stroke: none;
   font-family: 'Open Sans', sans-serif;
@@ -22,19 +22,19 @@ text.client {
   dominant-baseline: middle;    
 }
 
-p.conflicts {
+.main p.conflicts {
   color: white;
   background: red;
   font-weight: bold;
 }
 
-p.no-conflicts {
+.main p.no-conflicts {
   color: white;
   background: green;
   font-weight: bold;
 }
 
-#text {
+.main #text {
   font-size: 13pt;
   line-height: 1.3em;
   font-size: medium;
@@ -59,14 +59,14 @@ circle[color="6"] { fill:#66a61e; }
 circle[color="7"] { fill:#a6761d; } 
 circle[color="8"] { fill:#666666; } 
 
-button.color1 { background-color:#1b9e77; } 
-button.color2 { background-color:#d95f02; } 
-button.color3 { background-color:#7570b3; } 
-button.color4 { background-color:#e7298a; }
-button.color5 { background-color:#e6ab02; } 
-button.color6 { background-color:#66a61e; }
-button.color7 { background-color:#a6761d; } 
-button.color8 { background-color:#666666; } 
+.main button.color1 { background-color:#1b9e77; } 
+.main button.color2 { background-color:#d95f02; } 
+.main button.color3 { background-color:#7570b3; } 
+.main button.color4 { background-color:#e7298a; }
+.main button.color5 { background-color:#e6ab02; } 
+.main button.color6 { background-color:#66a61e; }
+.main button.color7 { background-color:#a6761d; } 
+.main button.color8 { background-color:#666666; } 
 
 circle[choices] {
   fill-opacity: 1;
@@ -91,20 +91,20 @@ line[conflict="1"] {
   stroke-width: 3px;
 }
 
-button {
+.main button {
   font-weight: bold;
   margin: .5em;
   font-size: 1.5em;
 }
 
-div.choices button {
+.main div.choices button {
   padding-right: 1em;
 }
 
-table.list {
+.main table.list {
   padding-left: 1em;
 }
 
-table.list td, table.listitem td {
+.main table.list td, table.listitem td {
   vertical-align: top;
 }
